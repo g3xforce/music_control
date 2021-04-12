@@ -56,13 +56,13 @@ export default class CreateRoomPage extends Component {
       <Grid container spacing={1}>
         <Grid item xs={12} align="center">
           <Typography component="h4" variant="h4">
-            Create A Room
+            Buat sebuah Room
           </Typography>
         </Grid>
         <Grid item xs={12} align="center">
           <FormControl component="fieldset">
             <FormHelperText>
-              <div align="center">Guest Control of Playback State</div>
+              <div align="center">Tamu Bisa Mengendalikan Playback Lagu</div>
             </FormHelperText>
             <RadioGroup
               row
@@ -97,7 +97,7 @@ export default class CreateRoomPage extends Component {
               }}
             />
             <FormHelperText>
-              <div align="center">Votes Required To Skip Song</div>
+              <div align="center">Votes yang dibutuhkan untuk skip Lagu</div>
             </FormHelperText>
           </FormControl>
         </Grid>
@@ -107,12 +107,12 @@ export default class CreateRoomPage extends Component {
             variant="contained"
             onClick={this.handleRoomButtonPressed}
           >
-            Create A Room
+            Buat sebuah Room
           </Button>
         </Grid>
         <Grid item xs={12} align="center">
           <Button color="secondary" variant="contained" to="/" component={Link}>
-            Back
+            Kembali
           </Button>
         </Grid>
       </Grid>
