@@ -18,13 +18,13 @@ export default class RoomJoinPage extends Component {
             <Grid container spacing={1}>
                 <Grid item xs={12} align="center">
                     <Typography variant="h4" component="h4">
-                        Join a Room
+                        Gabung ke Room
                     </Typography>
                     <Grid item xs={12} align="center">
                         <TextField 
                             error={this.state.error}
                             label="Code"
-                            placeholder="Enter a Room Code"
+                            placeholder="Masukkan Kode Room"
                             value={this.state.roomCode}
                             helperText={this.state.error}
                             variant="outlined"
@@ -33,10 +33,10 @@ export default class RoomJoinPage extends Component {
                     </Grid>
                 </Grid>
                 <Grid item xs={12} align="center">
-                    <Button variant="contained" color="primary" onClick={this.roomButtonPressed}>Enter Room</Button>
+                    <Button variant="contained" color="primary" onClick={this.roomButtonPressed}>Masuk Room</Button>
                 </Grid>
                 <Grid item xs={12} align="center">
-                    <Button variant="contained" color="secondary" to="/" component={Link}>Back</Button>
+                    <Button variant="contained" color="secondary" to="/" component={Link}>Kembali</Button>
                 </Grid>
             </Grid>
         );
@@ -60,7 +60,7 @@ export default class RoomJoinPage extends Component {
             if (response.ok) {
                 this.props.history.push(`/room/${this.state.roomCode}`)
             } else {
-                this.setState({error: "Room not found."})
+                this.setState({error: "Room tidak ditemukan."})
             }
         }).catch((error) => {
             console.log(error);
